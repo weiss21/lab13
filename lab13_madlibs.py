@@ -60,6 +60,8 @@ for word in wordsNeeded:
 newString = ''
 for i in range (len(solutionList)):
   newString += myList[i] + ' ' + solutionList[i] + '\n'
+#Just an extra String being left out.
+newString += myList[len(myList) - 1]
 print newString
   
 
