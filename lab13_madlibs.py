@@ -1,3 +1,8 @@
+#Lab 13-Madlibs
+#Team 10 - M. Mariscal, C. Piwarski, W. Robleh
+
+
+
 #Step 1: Find a news article online
 #You only need between 100 and 200 words for a decent mad lib, so if you find a really long story, take only part of it.  
 #Step 2: Remove some words
