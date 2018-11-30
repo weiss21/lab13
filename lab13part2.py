@@ -105,6 +105,7 @@ class Room:
 class Player:
 
     # Constructor method for Class Player
+<<<<<<< HEAD
     def __init__(self, inventory=[], name=''):
         self.inventory = inventory
         self.location = None
@@ -117,6 +118,11 @@ class Player:
     # This method returns the name of the player
     def getName(self):
         return self.name
+=======
+    def __init__(self, inventory=''):
+        self.inventory = inventory
+        self.location = None
+>>>>>>> 2ff1897d719e3fd4fed24a8c4ba24c552c5a29af
 
     # This method returns the contents of the player's inventory
     def getInventory(self):
@@ -136,6 +142,7 @@ class Player:
       
     # This method adds an item to your inventory
     def addInventory(self, itemToAdd):
+<<<<<<< HEAD
       self.inventory.append(itemToAdd)
 
     # This method prints out your inventory with item descriptions
@@ -148,6 +155,23 @@ finding the key...'}
         for item in self.inventory:
             printNow(item)
             printNow(itemDesc[item])
+=======
+      self.inventory += itemToAdd + ' '
+
+    # This method prints out your inventory
+    def printInventory(self):
+        if self.inventory != '':
+            printNow('You have: ' + self.inventory)
+        else:
+            printNow('You do not have anything.')
+        if 'key' in self.inventory:
+            printNow('This looks like a gate key for the prison')
+        if 'lockpick' in self.inventory:
+            printNow('A flimsy lockpick that criminals use. Better off\
+ finding the key...')
+        if 'cat' in self.inventory:
+            printNow('Its a cat. Why did you take it???')
+>>>>>>> 2ff1897d719e3fd4fed24a8c4ba24c552c5a29af
           
 
 # Main function for the game
@@ -240,10 +264,15 @@ def Main():
     printNow(helpMessage)
    
     # Main game loop
+<<<<<<< HEAD
     showInformation(welcomeMessage)
     name = requestString('Please type in your characters name:')
     player1.setName(name)
 
+=======
+    showInformation("Welcome to Jailbreak\nYou are a prisoner who is looking to escpae from one of the most dangerous prisons in the world.\n")
+    name = requestString('Please type in your characters name')
+>>>>>>> 2ff1897d719e3fd4fed24a8c4ba24c552c5a29af
      
     
     while gameWon != True:
@@ -278,8 +307,12 @@ def Main():
          
         # handle an examine request
         if input == 'examine':
+<<<<<<< HEAD
           whatToExamine = requestString('What would you like to examine? room \
 or items?')
+=======
+          whatToExamine = requestString('What would you like to examine? room or items?')
+>>>>>>> 2ff1897d719e3fd4fed24a8c4ba24c552c5a29af
           if whatToExamine == 'room':
             printNow(player1.getLocation().getDesc())
           elif whatToExamine == 'items':
@@ -305,30 +338,55 @@ or items?')
           else:
             printNow('There is no exit in that direction')
         
+<<<<<<< HEAD
         # game over | win conditions section
+=======
+        #######If there is a better way of doing this let me know ######
+        # game over | win conditions section
+
+>>>>>>> 2ff1897d719e3fd4fed24a8c4ba24c552c5a29af
         # gate room | main exit
         if player1.getLocation() == room9 and 'key' in player1.getInventory():
             gameWon = True
             printNow('You unlock the gate with the key. Congratulations, you\
+<<<<<<< HEAD
  escaped ' + player1.getName() + '!')
+=======
+         escaped!')
+>>>>>>> 2ff1897d719e3fd4fed24a8c4ba24c552c5a29af
         elif player1.getLocation() == room9:
             printNow('You\'ve made it to the exit, but the gate is locked!')
 
         # secret room
+<<<<<<< HEAD
         if player1.getLocation() == room10 and \
         'lockpick' in player1.getInventory():
+=======
+        if player1.getLocation() == room10 and 'lockpick' in player1.getInventory():
+>>>>>>> 2ff1897d719e3fd4fed24a8c4ba24c552c5a29af
             printNow(player1.getLocation().getName())
             printNow(player1.getLocation().getDesc())
             printNow('You use the lockpick on the strange keyhole.')
             printNow('You found a secret exit ' + name + '. You win!!!')  
             gameWon = True 
             
+<<<<<<< HEAD
         # fail condition. Ran into the guard room.
         if player1.getLocation() == room8:
           gameWon = True
           printNow('You entered the Guard\'s Room. You got caught!!!')
+=======
+          
+        # fail condition. Ran into the guard room.
+        if player1.getLocation() == room8:
+          gameWon = True
+          print 'You entered the Guard\'s Room. You got caught!!!'
+>>>>>>> 2ff1897d719e3fd4fed24a8c4ba24c552c5a29af
           
 
           
 
+<<<<<<< HEAD
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+=======
+>>>>>>> 2ff1897d719e3fd4fed24a8c4ba24c552c5a29af
