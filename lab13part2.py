@@ -240,8 +240,7 @@ def Main():
     printNow(helpMessage)
    
     # Main game loop
-    showInformation("Welcome to Jailbreak\nYou are a prisoner who is looking\
- to escpae from one of the most dangerous prisons in the world.\n")
+    showInformation(welcomeMessage)
     name = requestString('Please type in your characters name:')
     player1.setName(name)
 
