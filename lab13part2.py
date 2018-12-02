@@ -309,7 +309,6 @@ or items?')
         
 
         # game over | win conditions section
-
         # gate room | main exit
         if player1.getLocation() == room9 and 'key' in player1.getInventory():
             gameWon = True
@@ -319,9 +318,6 @@ or items?')
             printNow('You\'ve made it to the exit, but the gate is locked!')
 
         # secret room
-        if player1.getLocation() == room10 and \
-        'lockpick' in player1.getInventory():
-
         if player1.getLocation() == room10 and 'lockpick' in player1.getInventory():
             printNow(player1.getLocation().getName())
             printNow(player1.getLocation().getDesc())
