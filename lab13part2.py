@@ -233,18 +233,12 @@ def Main():
     helpMessage = 'Type exit to quit your game.\nTo move your player type n, s,\
  e,and w.\nType get to pick up objects\nType in examine to look at your\
  surroundings or view inventory.\n'
-    
-    # print welcome message
-    printNow(welcomeMessage)
-    printNow(helpMessage)
    
     # Main game loop
     showInformation(welcomeMessage)
     name = requestString('Please type in your characters name:')
     player1.setName(name)
-
     showInformation(helpMessage)
-    name = requestString('Please type in your characters name')
      
     
     while gameWon != True:
