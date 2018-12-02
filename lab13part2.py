@@ -273,8 +273,6 @@ def Main():
          
         # handle an examine request
         if input == 'examine':
-          whatToExamine = requestString('What would you like to examine? room \
-or items?')
           whatToExamine = requestString('What would you like to examine? room or items?')
           if whatToExamine == 'room':
             printNow(player1.getLocation().getDesc())
