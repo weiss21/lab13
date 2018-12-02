@@ -9,14 +9,14 @@
 #https://www.nytimes.com/2018/11/28/fashion/weddings/who-let-the-dogs-out-at-
 #the-wedding-readers-respond.html
 
-myList = ['There was no doubt that my', 'pets', 'had to be included in my',\
-'wedding','I am so obsessed with them. I walked down the', 'aisle', \
-'first so that I would be on the stage to watch Toby and Rooby go down. They\
- were the main focus and the reason I chose my','amazing venue','There was\
- no negotiating. The','dogs', 'had to be a huge part of my wedding. \
-They are my','kids','Toby had a custom tuxedo made with gold buttons and \
+myList = ['There was no doubt that my', 'pets', ' had to be included in my',\
+'wedding','. I am so obsessed with them. I walked down the', 'aisle', \
+' first so that I would be on the stage to watch Toby and Rooby go down. They\
+ were the main focus and the reason I chose my','amazing venue','. There was\
+ no negotiating. The','dogs', ' had to be a huge part of my wedding. \
+They are my','kids','. Toby had a custom tuxedo made with gold buttons and \
 velvet accents which was modeled after','grooms','. Roobys\
- dress was modeled after','Sarah Jessica Parkers',' outfit in the opening of \
+ dress was modeled after','Sarah Jessica Parkers','\'s outfit in the opening of \
 Sex and the City.']
 myList.remove('pets')
 myList.remove('wedding')
@@ -54,7 +54,8 @@ for word in wordsNeeded:
 #Combine the original text plus the new words to print your final mad lib.   
 newString = ''
 for i in range (len(solutionList)):
-  newString += myList[i] + ' ' + solutionList[i] + '\n'
+  newString += myList[i] + ' ' + solutionList[i]
+newString += myList[-1]
 print newString
   
 
