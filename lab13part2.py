@@ -1,4 +1,4 @@
-#Lab 12
+#Lab 13- Adventure Game Update
 #Team 10 - M. Mariscal, C. Piwarski, W. Robleh
 
 # One object of Class Room represents a room in the game map
